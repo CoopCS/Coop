@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cooper Huber</title>
+		<style>
+			html * {
+				font-family: Times New Roman, Times, Serif;
+			}c
+		</style>
+	</head>
+	<body>
+		<header>
+	      <nav>
+	      	<ul class="nav"> 
+	      		<li><a href="index.html">Home</a></li>
+	      		<li><a href="relevantcoursework.html">Relevant Course Work</a></li>
+	      		<li><a href="certifications.html">Certifications</a></li>
+	      		<li><a href="wishingwell.html">Wishing Well</a></li> 
+	      	</ul> <!The password is:Leaf Green>
+	      </nav> 
+	    </header>  		
+	      		
+	      		<h2>Wishing Well</h2>
+	      		<p>The password is hidden within the html code of this page. Once you find it, submit it into the input field.</p>
+					<form name="PasswordField" action="">
+					  <input type="text" id="pwd" name="pwd" placeholder="**** *****" onkeydown = "if (event.keyCode == 13) document.getElementById('subPass).click()">
+					  <input type="button" id="subPass" value="Submit" onclick="isValid(this);">
+					</form>
+
+					<div id="Quote" style="display:none;">
+					  </br>
+					  <p>Everyone is haunted by two people. The person they used to be and the person they thought they would be.</p></br>
+					</div>
+										<script type="text/javascript">
+					  function isValid(){
+					  var pwd = document.getElementById('pwd').value;
+					  if (pwd == "Leaf Green")
+					    {document.getElementById('Quote').style.display = "block";}
+					  else
+					    {alert('Incorrect Password')}
+					  }
+</script>
+    </body>
+</html>
